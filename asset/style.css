@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-body{
-    font-family: 'lato', sans-serif;
-    margin: 0 188px 0  188px;
-    /* color: #ffffff; */
-    background-color: hsla(0, 11%, 89%, 0.61);
 
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto; /* Centrer le contenu horizontalement */
+    max-width: 1200px; /* Largeur maximale pour limiter la largeur du contenu */
+    background-color: #e3e3e3;
 }
 header{
     position: relative;
@@ -24,7 +24,6 @@ header{
 header h1{
     font-size: 40px;
     margin: 5px;
-    /* font-weight: 700; */
     padding: 10px;
 }
 header h2{
@@ -35,8 +34,9 @@ header h2{
 }
 header li{
     list-style-type: none;
-    font-weight: 200 ;
-    font-family: 'raleway';
+    font-weight: 300 ;
+    font-family: 'lato';
+    padding: 5px;
 
 }
 a {
@@ -51,62 +51,40 @@ a {
     margin: 10px;
 }
 
-
 i {
-  margin-right: 3px; /* Espacement entre l'icône et le texte */
-}img{
-    position: absolute;
-    left: 90px;
+  margin-right: 2px; /* Espacement entre l'icône et le texte */
+}
+ img {
+    cursor: zoom-in; /* Indique que l'image peut être zoomée */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation fluide */
     width: 150px;
     height: 150px;
     border: #ffffff 5px solid;
     border-radius: 50%;
     margin: 5px;
-    /* aspect-ratio: 16/9; */
-    /* transition: transform 0.3s ease; Ajoute une animation fluide au zoom  */
-    /* transform: scale(1.1); Agrandit l'image de 20 % au survol */
-}
-div{
-/* padding-right: 50px; */
-padding-left: 450px;
-}
-footer{
-    background-color: #17abb3;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    justify-content: center;
-    margin: 0 ;
-    height: 88px;}
-footer ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    padding: 5px;
-    margin: 10px;
-    gap: 10px;
-   }    
-footer p{
-    display: flex;
-    opacity: 0.5;
-    margin-top: auto;
-    justify-content: center;
+  }
+  
+ img:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Effet d'ombre autour de l'image */
+  }
 
-} main{
+ul{
+    padding: 0;}
+main{
     position: relative;
 }
-section {
+.un{
     display: flex;
-    font-size: 20px;
+    /* font-size: 20px; */
     flex-direction: column;
-    align-items: start;
-    background-color: #e3e3e3;
+    /* align-items: ; */
+    background-color: #f5f5f5;
     margin: 0 ;
-    padding: 0 0 160px 10px;
-    width: 300px;
+    padding: 20px 0 160px 50px;
+    width: 310px;
+    height: auto;
+    text-align: left;
 }
 section h2{
     font-size: 20px;
@@ -115,30 +93,37 @@ section h2{
     padding: 5px;
     color:#17abb3;
 }nav{
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
     /* justify-content: space-around; */
     width: 100px;
+    text-align: center;
+    padding: 0 0 0 0;
 
+}
+ul li{
+    list-style: none;
 }
 nav li{
     font-size: 16px;
     font-weight: 200;
     list-style: none;
 
+
 }
+
 nav i{
     margin-right: 3px;
     color: #17abb3;
     left: 40px;
 }
-hr {
+.un hr {
     border: none; /* Supprime la bordure par défaut */
-    height: 1px; /* Définit la hauteur de la ligne */
+    height: 0.1px; /* Définit la hauteur de la ligne */
     background-color: black; /* Couleur de la ligne */
-    width: 260px; /* Largeur personnalisée */
+    width: 280px; /* Largeur personnalisée */
     margin: 0; /* Centrer la ligne et ajouter un espace vertical */
     opacity: 0.2;
   }
@@ -146,6 +131,123 @@ hr {
 p {
     display: flex; /* Active Flexbox pour organiser le contenu en ligne */
     align-items: center; /* Aligne verticalement les icônes et le texte */
-    /* gap: 10px; */
     left: 4px;
   }
+  .deux {
+    position: absolute; /* Positionnement absolu */
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    top: 0;             /* En haut de la page */
+    right: 0;           /* Aligné à droite */
+    width: 840px; 
+    height: 100%; /* Hauteur de la barre latérale */
+    margin: 0 0 0 0; 
+    padding: 0 0 0px 10px; /* Ajoute un peu d'espace autour du contenu */
+    text-align:left;    /* Taille ajustée au contenu */
+  }
+  .points-carres-violets {
+    list-style-type: none; /* Supprime les points par défaut */
+    padding-left: 0;
+  }
+  
+  .points-carres-violets li {
+    position: relative;
+    padding-left: 20px; /* Espace pour le carré */
+  }
+  
+  .points-carres-violets li::before {
+    content: "■"; /* Symbole pour un carré */
+    color: #17abb3;/* Couleur violette */
+    font-size: 15px; /* Taille du carré */
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%); /* Centre le carré verticalement */
+  }
+   .deux li p{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right; /* Alignement à droite */
+    color: #17abb3; /* Couleur violette */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 10px 0 0;
+      
+  }
+  .deux strong em{
+    display: flex;
+    align-items: center;
+    text-align: end;
+  }
+  .deux hr{
+    border: none; /* Supprime la bordure par défaut */
+    height: 1px; /* Définit la hauteur de la ligne */
+    background-color: black; /* Couleur de la ligne */
+    width: auto; /* Largeur personnalisée */
+    margin: 0; /* Centrer la ligne et ajouter un espace vertical */
+    opacity: 0.2;
+
+  }
+  .hover-effect {
+    position: relative; /* Permet d'ajouter le trait à gauche */
+    background-color: transparent; /* Fond par défaut */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition fluide */
+  }
+  
+  .hover-effect:hover {
+    background-color: #f0f0f0; /* Couleur de fond au survol */
+  }
+  
+  .hover-effect::before {
+    content: ""; /* Ajout d'un élément pseudo pour le trait */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px; /* Largeur du trait vertical */
+    height: 100%; /* Prend toute la hauteur de l'élément */
+    background-color: #17abb3; /* Couleur du trait (correspondant à celle des titres) */
+    transform: scaleY(0); /* Par défaut, le trait n'est pas visible */
+    transition: transform 0.3s ease; /* Animation fluide */
+  }
+  
+  .hover-effect:hover::before {
+    transform: scaleY(1); /* Le trait devient visible au survol */
+  }
+  footer{
+      background-color: #17abb3;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: space-around;
+      justify-content: center;
+      margin: 0 ;
+      height: 88px;
+      padding: 2px;}
+  footer ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style: none;
+      padding: 5px;
+      margin: 10px;
+      gap: 10px;
+     }    
+  footer p{
+      display: flex;
+      opacity: 0.5;
+      margin-top: auto;
+      justify-content: center;
+  
+  
+  }
+  footer a{
+      opacity: 1; /* Opacité pleine par défaut */
+      transition: opacity 0.3s ease; /* Transition fluide pour l'effet au survol */
+    }
+    
+  footer a:hover {
+      opacity: 0.7; /* Réduction de l'opacité au survol */
+      cursor: pointer; /* Indique que l'élément est interactif */
+    }

@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: 'lato', sans-serif;
+    margin: 0 188px 0  188px;
+    /* color: #ffffff; */
+    background-color: hsla(0, 11%, 89%, 0.61);
+
+}
+header{
+    position: relative;
+    background-color: #17abb3;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+    align-content: space-around;
+    justify-content: center;
+    margin: 0 ;
+    height: 200px;
+
+}
+header h1{
+    font-size: 40px;
+    margin: 5px;
+    /* font-weight: 700; */
+    padding: 10px;
+}
+header h2{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 400;
+    padding: 5px;
+}
+header li{
+    list-style-type: none;
+    font-weight: 200 ;
+    font-family: 'raleway';
+
+}
+a {
+    color: inherit; /* Hérite de la couleur de l'élément parent */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+  }
+   header  ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes de tailles égales */
+    list-style: none; /* Supprime les puces par défaut */
+    padding: 5px; /* Ajoute un peu d'espace autour des éléments */
+    margin: 10px;
+}
+
+
+i {
+  margin-right: 3px; /* Espacement entre l'icône et le texte */
+}img{
+    position: absolute;
+    left: 90px;
+    width: 150px;
+    height: 150px;
+    border: #ffffff 5px solid;
+    border-radius: 50%;
+    margin: 5px;
+    /* aspect-ratio: 16/9; */
+    /* transition: transform 0.3s ease; Ajoute une animation fluide au zoom  */
+    /* transform: scale(1.1); Agrandit l'image de 20 % au survol */
+}
+div{
+/* padding-right: 50px; */
+padding-left: 450px;
+}
+footer{
+    background-color: #17abb3;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    margin: 0 ;
+    height: 88px;}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+    gap: 10px;
+   }    
+footer p{
+    display: flex;
+    opacity: 0.5;
+    margin-top: auto;
+    justify-content: center;
+
+} main{
+    position: relative;
+}
+section {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: start;
+    background-color: #e3e3e3;
+    margin: 0 ;
+    padding: 0 0 160px 10px;
+    width: 300px;
+}
+section h2{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 400;
+    padding: 5px;
+    color:#17abb3;
+}nav{
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    /* justify-content: space-around; */
+    width: 100px;
+
+}
+nav li{
+    font-size: 16px;
+    font-weight: 200;
+    list-style: none;
+
+}
+nav i{
+    margin-right: 3px;
+    color: #17abb3;
+    left: 40px;
+}
+hr {
+    border: none; /* Supprime la bordure par défaut */
+    height: 1px; /* Définit la hauteur de la ligne */
+    background-color: black; /* Couleur de la ligne */
+    width: 260px; /* Largeur personnalisée */
+    margin: 0; /* Centrer la ligne et ajouter un espace vertical */
+    opacity: 0.2;
+  }
+
+p {
+    display: flex; /* Active Flexbox pour organiser le contenu en ligne */
+    align-items: center; /* Aligne verticalement les icônes et le texte */
+    /* gap: 10px; */
+    left: 4px;
+  }
